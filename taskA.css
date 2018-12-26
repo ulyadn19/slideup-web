@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    /*padding: 10px;*/
+    text-align: center;
+}
+.main {
+    justift-content: center;
+}
+.inner {
+    text-align: center;
+    color: black;
+    overflow: hidden;
+    padding: 0.4em;
+}
+.inner-left > h1{
+    font-size: 3.5em;
+    animation: slide_up 1.6s ease;
+}
+
+.inner-left > p{
+    font-size: 1.2em;
+    animation: slide_up 2.4s ease;
+}
+
+/*.inner-left > button {
+    margin-top: 1em;
+    padding: 1em 2.5em;
+    font-size: 1em;
+    border-radius: 3em;
+    border: none;
+    background: cornsilk;
+    color: purple;
+    animation: slide_up 2.4s ease;
+}*/
+
+.inner-right > img{
+    width: 50%;
+    height: 500px;
+    animation: slide_up 0.9s ease;
+}
+
+/* slide up function */
+@keyframes slide_up {
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+/* left column */
+section {
+    width: 50%;
+    float: left;
+    height: 500px;
+    background: palevioletred;
+}
+/* right column */
+.right {
+    width: 50%;
+    float: left;
+    height: 500px;
+    background: none;
+}
